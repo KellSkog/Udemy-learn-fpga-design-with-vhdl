@@ -1,0 +1,5 @@
+|LearnVHDL
+clkIn => clkOut.DATAIN
+clkOut <= clkIn.DB_MAX_OUTPUT_PORT_TYPE
+
+

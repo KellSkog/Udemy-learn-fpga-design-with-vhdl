@@ -1,0 +1,12 @@
+Library ieee;
+use ieee.std_library_1164.all;
+
+entity LearnVHDL is
+begin
+
+end entity;
+
+architecture a_LearnVHDL of LearnVHDL is
+begin
+
+end architecture;
