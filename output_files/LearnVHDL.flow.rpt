@@ -1,5 +1,5 @@
 Flow report for LearnVHDL
-Sat Nov 25 14:44:06 2023
+Sun Nov 26 15:26:05 2023
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Sat Nov 25 14:44:06 2023          ;
+; Flow Status                        ; Successful - Sun Nov 26 15:26:05 2023          ;
 ; Quartus Prime Version              ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                      ; LearnVHDL                                      ;
 ; Top-level Entity Name              ; LearnVHDL                                      ;
 ; Family                             ; Cyclone 10 LP                                  ;
 ; Device                             ; 10CL025YU256C8G                                ;
 ; Timing Models                      ; Final                                          ;
-; Total logic elements               ; 0 / 24,624 ( 0 % )                             ;
-;     Total combinational functions  ; 0 / 24,624 ( 0 % )                             ;
-;     Dedicated logic registers      ; 0 / 24,624 ( 0 % )                             ;
-; Total registers                    ; 0                                              ;
-; Total pins                         ; 2 / 151 ( 1 % )                                ;
+; Total logic elements               ; 22 / 24,624 ( < 1 % )                          ;
+;     Total combinational functions  ; 22 / 24,624 ( < 1 % )                          ;
+;     Dedicated logic registers      ; 22 / 24,624 ( < 1 % )                          ;
+; Total registers                    ; 22                                             ;
+; Total pins                         ; 4 / 151 ( 3 % )                                ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 0 / 608,256 ( 0 % )                            ;
 ; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                                ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/25/2023 14:43:51 ;
+; Start date & time ; 11/26/2023 15:25:51 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; LearnVHDL           ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 88974390440877.170091983120748         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 88974390440877.170100875107688         ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -86,10 +86,21 @@ https://fpgasoftware.intel.com/eula.
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --                                ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --                                ;
+; MISC_FILE                           ; counter_inst.vhd                       ; --            ; --          ; --                                ;
+; MISC_FILE                           ; counter.cmp                            ; --            ; --          ; --                                ;
+; NUM_PARALLEL_PROCESSORS             ; All                                    ; --            ; --          ; --                                ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                      ; --            ; --          ; --                                ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                      ; --            ; --          ; --                                ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                             ; --            ; --          ; --                                ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                             ; --            ; --          ; --                                ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --                                ;
+; VHDL_INPUT_VERSION                  ; VHDL_2008                              ; VHDL_1993     ; --          ; --                                ;
+; VHDL_SHOW_LMF_MAPPING_MESSAGES      ; Off                                    ; --            ; --          ; --                                ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 
 
@@ -98,12 +109,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4808 MB             ; 00:00:07                           ;
-; Fitter               ; 00:00:03     ; 1.0                     ; 6534 MB             ; 00:00:05                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4716 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 4922 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4648 MB             ; 00:00:00                           ;
-; Total                ; 00:00:12     ; --                      ; --                  ; 00:00:14                           ;
+; Analysis & Synthesis ; 00:00:06     ; 1.0                     ; 4879 MB             ; 00:00:08                           ;
+; Fitter               ; 00:00:02     ; 1.1                     ; 6530 MB             ; 00:00:04                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4719 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:01     ; 1.1                     ; 4922 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4648 MB             ; 00:00:00                           ;
+; Total                ; 00:00:11     ; --                      ; --                  ; 00:00:14                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

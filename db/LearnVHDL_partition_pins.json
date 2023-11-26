@@ -4,11 +4,19 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "clkOut",
+					"name" : "LED0",
 					"strict" : false
 				},
 				{
-					"name" : "clkIn",
+					"name" : "CLK12_OUT",
+					"strict" : false
+				},
+				{
+					"name" : "COUNT_0",
+					"strict" : false
+				},
+				{
+					"name" : "CLK12M",
 					"strict" : false
 				}
 			]
